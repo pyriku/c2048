@@ -11,7 +11,7 @@ int main() {
 
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
-            std::cout << b.grid[i][j] << ", ";
+            std::cout << b.get_cell(i, j) << ", ";
         }
         std::cout << std::endl;
     }

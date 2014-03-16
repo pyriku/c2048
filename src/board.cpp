@@ -14,6 +14,10 @@ Board::Board() {
     random_tile();
 }
 
+int Board::get_cell(int x, int y) {
+    return grid[x][y];
+}
+
 void Board::random_tile() {
     int col = rand() % 4;
     int row = rand() % 4;
